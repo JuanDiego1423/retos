@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Mejor Amiga</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Eres la mejor amiga del mundo, ¡gracias por estar siempre!</h1>
+        <button id="close-btn" onclick="cerrarMensaje()">¡Gracias!</button>
+        <button id="surprise-btn" onclick="cambiarColor()">Click aquí para sorpresa</button>
+    </div>
+
+    <script>
+        function cerrarMensaje() {
+            alert("¡Gracias a ti también por ser una amiga tan increíble!");
+        }
+
+        function cambiarColor() {
+            const colors = ['#FFB6C1', '#FF69B4', '#FF1493', '#DB7093', '#FFC0CB'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
